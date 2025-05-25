@@ -5,11 +5,11 @@ import PropTypes from "prop-types";
 const sizes = {
   sm: "text-sm px-3 py-1.5",
   md: "text-base px-4 py-2",
-  lg: "text-lg px-6 py-3",
+  lg: "text-lg px-5 py-2.5",
 };
 
 const variants = {
-  primary: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-300",
+  primary: "bg-indigo-400 text-white hover:bg-blue-700 focus:ring-blue-300",
   secondary: "bg-gray-100 text-gray-800 hover:bg-gray-200 focus:ring-gray-300",
   neutral: "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50",
   success: "bg-green-600 text-white hover:bg-green-700 focus:ring-green-300",

@@ -1,6 +1,11 @@
+/*src/App.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
-  @apply bg-white text-teal-900 font-sans;
+
+.btn {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
 }
