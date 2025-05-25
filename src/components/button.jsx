@@ -9,8 +9,8 @@ const sizes = {
 };
 
 const variants = {
-  primary: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-300",
-  secondary: "bg-gray-100 text-gray-800 hover:bg-gray-200 focus:ring-gray-300",
+  primary: "bg-aqua-600 text-white-50 hover:bg-aqua-500 focus:ring-aqua-300",
+  secondary: "bg-grey-100 text-black-950 hover:bg-grey-200 focus:ring-grey-300",
   neutral: "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50",
   success: "bg-green-600 text-white hover:bg-green-700 focus:ring-green-300",
   error: "bg-red-600 text-white hover:bg-red-700 focus:ring-red-300",
