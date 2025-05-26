@@ -5,100 +5,50 @@ import IconRight from './icons/Arrow-Enter-Left-Outline.svg?react'
 
 function App() {
   return (
-    <div className="w-full justify-center flex flex-wrap gap-4 min-h-screen bg-white-200 text-black-800 p-6 max-w-6xl mx-auto">
-      <div className="w-full h-min flex items-center gap-4 bg-aqua-50 justify-center p-6 rounded-curve-xxl">
-      <img src="/DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-12 h-12"></img>
-      <h1 className="text-disp-sm font-semibold">DC Ultimate UI Kit - Live Preview</h1></div>
-      <section className="w-full mb-12">
-        <h2 className="text-xl font-semibold mb-4">Button with both icons</h2>
-        <div className="w-full justify-center bg-white-100 flex items-center gap-4 p-4 flex-wrap">
-          {/*Show both icons */}
-          <Button
-            size="sm"
-            variant="primary"
-            leftIcon={IconLeft}
-            rightIcon={IconRight}
-          >
-          With Icons
-          </Button>
-          <Button
-            size="md"
-            variant="primary"
-            leftIcon={IconLeft}
-            rightIcon={IconRight}
-          >
-          With Icons
-          </Button>
-          <Button
-            size="lg"
-            variant="primary"
-            leftIcon={IconLeft}
-            rightIcon={IconRight}
-          >
-          With Icons
-          </Button>
+    <div className="w-full flex-1 min-h-screen bg-white-200">
+      <nav className="w-full h-min z-10 bg-aqua-100 border-b border-white-800 shadow-sm flex gap-4 items-center p-4 ">
+        <div className="w-full max-w-7xl mx-auto flex items-center gap-4 justify-start">
+        <img src="DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-12 h-12"></img>
+        <h1 className="text-text-xxl font-semibold">DC Ultimate UI Kit</h1></div>
+      </nav>
+      <div className="w-full flex gap-0 min-h-screen max-w-7xl mx-auto">
+          <div className="sticky -left-64 bottom-0 top-0 z-1 hidden h-[calc(100vh-4px)] w-60 shrink-0 overflow-y-auto lg:left-0 lg:block bg-white-50 border-r
+          border-white-800">
+            {/*Sidebar*/}
+            <h3 className="w-full text-text-lg font-semibold">Sidebar</h3>
           </div>
-          <h2 className="text-xl font-semibold mb-4">Button with only right side icon</h2>
-          <div className="justify-center flex gap-4 flex-wrap">
-          {/*Show right icon only */}
-          <Button
-            size="sm"
-            variant="secondary"
-            showLeftIcon={false}
-            leftIcon={IconLeft}
-            showRightIcon={true}
-            rightIcon={IconRight}            
-          >
-          Right Only
-          </Button>
-          <Button
-            size="md"
-            variant="secondary"
-            showLeftIcon={false}
-            leftIcon={IconLeft}
-            showRightIcon={true}
-            rightIcon={IconRight}            
-          >
-          Right Only
-          </Button>
-          <Button
-            size="lg"
-            variant="secondary"
-            showLeftIcon={false}
-            leftIcon={IconLeft}
-            showRightIcon={true}
-            rightIcon={IconRight}            
-          >
-          Right Only
-          </Button></div>
-          <h2 className="text-2xl font-semibold mb-4">Button with only left side icon</h2>
-          <div className="justify-center flex gap-4 flex-wrap">
-          {/*Show left icon only */}
-          <Button
-            size="md"
-            variant="success"
-            showLeftIcon={true}
-            leftIcon={IconLeft}
-            showRightIcon={false}
-            rightIcon={IconRight}
-          >
-          Left Only
-          </Button></div>
-          <h2 className="text-2xl font-semibold mb-4">Button without any icons</h2>
-          <div>
-          {/* Hide both icons */}
-          <Button
-            size="md"
-            variant="neutral"
-            showLeftIcon={false}
-            leftIcon={IconLeft}
-            showRightIcon={false}
-            rightIcon={IconRight}            
-          >
-          No Icons
-          </Button>
-        </div>
-      </section>
+          <div className="w-full bg-white-200">
+            {/*Main Content*/}
+            <div className="w-full h-min justify-center bg-white-50 flex items-center gap-4 p-4 flex-wrap"> 
+            {/*Buttons*/}
+            <h3 className="w-full h-min text-text-lg font-semibold">Main Content</h3>
+            <Button
+              size="sm"
+              variant="primary"
+              leftIcon={IconLeft}
+              rightIcon={IconRight}
+            >
+            With Icons
+            </Button>
+            <Button
+              size="md"
+              variant="primary"
+              leftIcon={IconLeft}
+              rightIcon={IconRight}
+            >
+            With Icons
+            </Button>
+            <Button
+              size="lg"
+              variant="primary"
+              leftIcon={IconLeft}
+              rightIcon={IconRight}
+            >
+            With Icons
+            </Button>
+            </div>
+          </div>
+      </div>
       {/* Place your components here */}
     </div>
   )
