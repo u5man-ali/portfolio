@@ -6,6 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '480px', // Extra small devices (phones)
+        'sm': '640px', // Small devices (tablets)
+        'md': '768px', // Medium devices (desktops)
+        'lg': '1024px', // Large devices (large desktops)
+        'xl': '1280px', // Extra large devices (large desktops)
+        'max': {max: "1536px"} // 2X large devices
+      },
       colors: {
         white: {
           50: '#ffffff',
@@ -20,7 +28,7 @@ export default {
           900: '#cacaca',
           950: '#c5c5c5',
         },
-        grey: {
+        gray: {
           50: '#c0c0c0',
           100: '#b5b5b5',
           200: '#b0b0b0',
