@@ -318,13 +318,13 @@ export default {
       },
       borderRadius: {
         'square': '0px',
-        'xxs': '0.125rem', // 2px
-        'xs': '0.25rem', // 4px
-        'sm': '0.375rem', // 6px
-        'md': '0.5rem', // 8px
-        'lg': '0.625rem', // 10px
-        'xl': '0.75rem', // 12px
-        'xxl': '1rem', // 16px
+        'curve-xxs': '0.125rem', // 2px
+        'curve-xs': '0.25rem', // 4px
+        'curve-sm': '0.375rem', // 6px
+        'curve-md': '0.5rem', // 8px
+        'curve-lg': '0.625rem', // 10px
+        'curve-xl': '0.75rem', // 12px
+        'curve-xxl': '1rem', // 16px
         'pill': '9999px', // Fully rounded
       },
     },

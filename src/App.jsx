@@ -5,11 +5,13 @@ import IconRight from './icons/Arrow-Enter-Left-Outline.svg?react'
 
 function App() {
   return (
-    <div className="max-w-screen-xl min-h-screen bg-gray-100 text-gray-900 p-8">
-      <h1 className="text-xxl font-bold mb-6">DC Ultimate UI Kit - Live Preview</h1>
-      <section className="mb-12">
+    <div className="w-full justify-center flex flex-wrap gap-4 min-h-screen bg-white-200 text-black-800 p-6 max-w-6xl mx-auto">
+      <div className="w-full h-min flex items-center gap-4 bg-aqua-50 justify-center p-6 rounded-curve-xxl">
+      <img src="src/DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-12 h-12"></img>
+      <h1 className="text-disp-sm font-semibold">DC Ultimate UI Kit - Live Preview</h1></div>
+      <section className="w-full mb-12">
         <h2 className="text-xl font-semibold mb-4">Button with both icons</h2>
-        <div className="justify-center flex gap-4 flex-wrap">
+        <div className="w-full justify-center bg-white-100 flex items-center gap-4 p-4 flex-wrap">
           {/*Show both icons */}
           <Button
             size="sm"
@@ -34,9 +36,10 @@ function App() {
             rightIcon={IconRight}
           >
           With Icons
-          </Button></div>
+          </Button>
+          </div>
           <h2 className="text-xl font-semibold mb-4">Button with only right side icon</h2>
-          <div>
+          <div className="justify-center flex gap-4 flex-wrap">
           {/*Show right icon only */}
           <Button
             size="sm"
@@ -69,7 +72,7 @@ function App() {
           Right Only
           </Button></div>
           <h2 className="text-2xl font-semibold mb-4">Button with only left side icon</h2>
-          <div>
+          <div className="justify-center flex gap-4 flex-wrap">
           {/*Show left icon only */}
           <Button
             size="md"

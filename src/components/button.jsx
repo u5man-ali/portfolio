@@ -3,15 +3,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const sizes = {
-  sm: "text-sm px-3 py-1.5 borderRadius-xs",
-  md: "text-md px-4 py-2 borderRadius-sm",
-  lg: "text-lg px-5 py-2.5 borderRadius-md",
+  sm: "text-sm px-3 py-1.5 rounded-curve-xs",
+  md: "text-md px-4 py-2 rounded-curve-sm",
+  lg: "text-lg px-5 py-2.5 rounded-curve-md",
 };
 
 const variants = {
   primary: "bg-aqua-600 text-white-50 hover:bg-aqua-500 focus:ring-aqua-300",
-  secondary: "bg-grey-300 text-black-800 hover:bg-grey-200 focus:ring-grey-300",
-  neutral: "bg-white-50 text-black-800 border-gray-300 hover:bg-white-400 focus:ring-gray-300",
+  secondary: "bg-gray-300 text-black-800 hover:bg-gray-200 focus:ring-gray-300",
+  neutral: "text-black-800 border-gray-300 hover:bg-white-400 focus:ring-gray-300",
   success: "bg-green-600 text-white-50 hover:bg-green-500 focus:ring-green-300",
   error: "bg-red-600 text-white-50 hover:bg-red-500 focus:ring-red-300",
   warning: "bg-yellow-600 text-white-50 hover:bg-yellow-500 focus:ring-yellow-300",
@@ -30,13 +30,9 @@ export default function Button({
   ...props
 }) {
   return (
-    <div className={`inline-block p-[2px] bg-gradient-to-b from-[#b0b0b0] to [$707070]
-      ${sizes[size]}
-      `}
-      >
       <button
         className={`
-          inline-flex items-center justify-center gap-2 font-semibold rounded-md shadow-sm transition-all focus:outline-none focus:ring-2
+          inline-flex items-center justify-center gap-2 font-semibold shadow-sm transition-all focus:outline-none focus:ring-2
           ${sizes[size]} 
           ${variants[variant]}
           ${disabled ? "opacity-50 cursor-not-allowed" : ""}
@@ -45,10 +41,9 @@ export default function Button({
         {...props}
       >
         {showLeftIcon && LeftIcon && <LeftIcon className="w-5 h-5" />}
-        {showRightIcon && RightIcon && <RightIcon className="w-5 h-5" />}
         {children}
+        {showRightIcon && RightIcon && <RightIcon className="w-5 h-5" />}
       </button>
-    </div>
   );
 }
 
