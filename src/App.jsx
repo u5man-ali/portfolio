@@ -23,35 +23,6 @@ function App() {
           <div className="w-full p-6">
             {/*Main Content imported from /components/content.jsx*/}
             <Content selectedPage={selectedPage} />
-            <h2 className="w-full h-min text-text-xxl font-semibold mb-6 capitalize">{selectedPage}</h2>
-            <div className="w-full h-min justify-center bg-white-50 flex items-center gap-4 p-4 flex-wrap"> 
-            {/*Buttons*/}
-            <h3 className="w-full h-min text-text-lg font-semibold">Main Content</h3>
-            <Button
-              size="sm"
-              variant="primary"
-              leftIcon={IconLeft}
-              rightIcon={IconRight}
-            >
-            With Icons
-            </Button>
-            <Button
-              size="md"
-              variant="primary"
-              leftIcon={IconLeft}
-              rightIcon={IconRight}
-            >
-            With Icons
-            </Button>
-            <Button
-              size="lg"
-              variant="primary"
-              leftIcon={IconLeft}
-              rightIcon={IconRight}
-            >
-            With Icons
-            </Button>
-            </div>
           </div>
       </div>
       {/* Place your components here */}
