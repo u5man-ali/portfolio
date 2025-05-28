@@ -14,53 +14,17 @@ Whether you're crafting call-to-actions, form submissions, or navigation trigger
         <p className="w-full h-min text-body-md font-normal">The example below shows a basic button with neutral color. It features hover and active states for better interactive experience.</p>
         <div className="w-full border border-white-600 rounded-curve-xl justify-center items-center px-6 py-8 flex gap-4">
           <Button
-          size="md"
-          style="neutral"
-          showLeftIcon={false}
-          showRightIcon={false}
-          leftIcon={IconLeft}
-          rightIcon={IconRight}
-          >
-          Gradient Button
-          </Button>
-          <Button
-          size="sm"
-          style="neutral"
-          variant="outline"
-          shape="pill"
-          disabled={false}
-          showLeftIcon={false}
-          showRightIcon={false}
-          leftIcon={IconLeft}
-          rightIcon={IconRight}
-          >
-          Pill Shaped Button
-          </Button>
-          <Button
-          size="sm"
+          size="lg"
           style="neutral"
           variant="solid"
           shape="rounded"
           disabled={false}
-          showLeftIcon={false}
-          showRightIcon={false}
-          leftIcon={IconLeft}
-          rightIcon={IconRight}
+          showLeftIcon={true}
+          showRightIcon={true}
+          iconLeftName="Add-Circle-Filled" 
+          iconRightName="Add-Square-Multiple-Outline"
           >
-          Solid Color Button
-          </Button>
-          <Button
-          size="sm"
-          style="neutral"
-          variant="transparent"
-          shape="rounded"
-          disabled={false}
-          showLeftIcon={false}
-          showRightIcon={false}
-          leftIcon={IconLeft}
-          rightIcon={IconRight}
-          >
-          Transparent Button
+          Gradient Button
           </Button>
         </div>
         <h3 className="w-full h-min text-body-lg font-semibold">Primary Button</h3>
@@ -116,32 +80,211 @@ Whether you're crafting call-to-actions, form submissions, or navigation trigger
           Transparent Button
           </Button>
         </div>
+        <div className="w-full border border-white-600 rounded-curve-xl justify-center items-center px-6 py-8 flex gap-4">
+          <Button
+          size="md"
+          style="success"
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Gradient Button
+          </Button>
+          <Button
+          size="sm"
+          style="success"
+          variant="outline"
+          shape="pill"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Pill Shaped Button
+          </Button>
+          <Button
+          size="sm"
+          style="success"
+          variant="solid"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Solid Color Button
+          </Button>
+          <Button
+          size="sm"
+          style="success"
+          variant="transparent"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Transparent Button
+          </Button>
+        </div>
+        <div className="w-full border border-white-600 rounded-curve-xl justify-center items-center px-6 py-8 flex gap-4">
+          <Button
+          size="md"
+          style="error"
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Gradient Button
+          </Button>
+          <Button
+          size="sm"
+          style="error"
+          variant="outline"
+          shape="pill"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Pill Shaped Button
+          </Button>
+          <Button
+          size="sm"
+          style="error"
+          variant="solid"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Solid Color Button
+          </Button>
+          <Button
+          size="sm"
+          style="error"
+          variant="transparent"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Transparent Button
+          </Button>
+        </div>
+        <div className="w-full border border-white-600 rounded-curve-xl justify-center items-center px-6 py-8 flex gap-4">
+          <Button
+          size="md"
+          style="warning"
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Gradient Button
+          </Button>
+          <Button
+          size="sm"
+          style="warning"
+          variant="outline"
+          shape="pill"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Pill Shaped Button
+          </Button>
+          <Button
+          size="sm"
+          style="warning"
+          variant="solid"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Solid Color Button
+          </Button>
+          <Button
+          size="sm"
+          style="warning"
+          variant="transparent"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Transparent Button
+          </Button>
+        </div>
+        <div className="w-full border border-white-600 rounded-curve-xl justify-center items-center px-6 py-8 flex gap-4">
+          <Button
+          size="md"
+          style="info"
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Gradient Button
+          </Button>
+          <Button
+          size="sm"
+          style="info"
+          variant="outline"
+          shape="pill"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Pill Shaped Button
+          </Button>
+          <Button
+          size="sm"
+          style="info"
+          variant="solid"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Solid Color Button
+          </Button>
+          <Button
+          size="sm"
+          style="info"
+          variant="transparent"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Transparent Button
+          </Button>
+        </div>
       </div>
-      <h3 className="w-full h-min text-body-lg font-semibold">Primary Button</h3>
-        <Button
-        size="md"
-        style="info"
-        leftIcon={IconLeft}
-        rightIcon={IconRight}
-        >
-        Small Button
-        </Button>
-        <Button
-        size="md"
-        style="primary"
-        leftIcon={IconLeft}
-        rightIcon={IconRight}
-        >
-        Medium Button
-        </Button>
-        <Button
-        size="lg"
-        style="info"
-        leftIcon={IconLeft}
-        rightIcon={IconRight}
-        >
-        Info Button
-        </Button>
     </div>
     
   );
