@@ -247,13 +247,13 @@ export default {
         'disp-md': '3rem',   // 48px
         'disp-sm': '2.5rem', // 40px
         'disp-xs': '2rem',   // 32px
-        'text-xxl': '1.5rem', // 24px
-        'text-xl': '1.25rem', // 20px
-        'text-lg': '1.125rem', // 18px
-        'text-md': '1rem',   // 16px
-        'text-sm': '0.875rem', // 14px
-        'text-xs': '0.75rem', // 12px
-        'text-xxs': '0.5rem', // 8px          
+        'body-xxl': '1.5rem', // 24px
+        'body-xl': '1.25rem', // 20px
+        'body-lg': '1.125rem', // 18px
+        'body-md': '1rem',   // 16px
+        'body-sm': '0.875rem', // 14px
+        'body-xs': '0.75rem', // 12px
+        'body-xxs': '0.5rem', // 8px          
       },
       lineHeight: {
         'disp-xxl': '5rem', // 80px
@@ -268,7 +268,7 @@ export default {
       },
       fontFamily: {
         disp: ['Inter', 'sans-serif'],
-        text: ['Inter', 'sans-serif']
+        body: ['Inter', 'sans-serif']
       },
       spacing: {
         'null': '0px',
