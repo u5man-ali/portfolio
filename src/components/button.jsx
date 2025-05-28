@@ -2,9 +2,9 @@
 import PropTypes from "prop-types";
 
 const sizes = {
-  sm: "text-sm px-3 py-1.5 rounded-curve-xs",
-  md: "text-md px-4 py-2 rounded-curve-sm",
-  lg: "text-lg px-5 py-2.5 rounded-curve-md",
+  sm: "text-sm px-3 py-1.5 rounded-curve-sm",
+  md: "text-md px-4 py-2 rounded-curve-md",
+  lg: "text-lg px-5 py-2.5 rounded-curve-lg",
 };
 
 const variants = {
