@@ -13,7 +13,7 @@ function App() {
       <nav className="w-full h-min bg-aqua-100 border-b border-white-800 shadow-sm flex gap-4 items-center p-4 ">
         <div className="w-full max-w-7xl mx-auto flex items-center gap-4 justify-start">
         <img src="DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-12 h-12"></img>
-        <h1 className="text-text-xxl font-semibold">DezineCrafts - Ultimate UI Kit</h1></div>
+        <h1 className="text-body-xxl font-semibold">DezineCrafts - Ultimate UI Kit</h1></div>
       </nav>
       <div className="w-full flex gap-0 min-h-screen max-w-7xl mx-auto">
           <div className="sticky -left-64 bottom-0 top-0 z-1 hidden h-[calc(100vh-4px)] w-60 shrink-0 lg:left-0 lg:block">

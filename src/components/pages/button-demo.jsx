@@ -7,67 +7,120 @@ export default function buttonDemo() {
   return (
     <div className="flex justify-center items-center gap-4 mb-4 flex-wrap">
         <div className="w-full flex justify-center items-center gap-4 mb-4 flex-wrap">
-        <h1 className="w-full h-min text-disp-xs font-bold">DC Button Component</h1>
-        <h3 className="w-full h-min text-text-lg font-semibold">Reusable Button Component with Icon Support and Multiple Variants</h3>
-        <p className="w-full h-min text-text-md font-normal">Build powerful user interactions with our Tailwind CSS-powered button component. Designed to be flexible and modern, it includes support for icons, multiple styles like primary, neutral, outline, success, and error, and works seamlessly across different screen sizes.
+        <h1 className="w-full h-min text-body-xxl font-bold border-b border-white-600 p-2">DC Button Component</h1>
+        <p className="w-full h-min text-body-md font-normal mb-4">Build powerful CTAs with our Tailwind CSS-powered button component. Designed to be flexible and modern, it includes support for icons, multiple styles like primary, neutral, outline, success, and error, and works seamlessly across different screen sizes.
 Whether you're crafting call-to-actions, form submissions, or navigation triggers, this component adapts to your needs with clean, scalable styling. Explore the examples below to see how easily it integrates into your Tailwind-based UI projects.</p>
-        <div className="border border-white-500 rounded-curve-xl justify-center items-center p-6 flex gap-4">
+        <h3 className="w-full h-min text-body-lg font-semibold">Neutral Button</h3>
+        <p className="w-full h-min text-body-md font-normal">The example below shows a basic button with neutral color. It features hover and active states for better interactive experience.</p>
+        <div className="w-full border border-white-600 rounded-curve-xl justify-center items-center px-6 py-8 flex gap-4">
+          <Button
+          size="md"
+          style="neutral"
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Gradient Button
+          </Button>
           <Button
           size="sm"
-          variant="neutral"
+          style="neutral"
+          variant="outline"
+          shape="pill"
+          disabled={false}
           showLeftIcon={false}
           showRightIcon={false}
           leftIcon={IconLeft}
           rightIcon={IconRight}
           >
-          Neutral Small
+          Pill Shaped Button
           </Button>
+          <Button
+          size="sm"
+          style="neutral"
+          variant="solid"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Solid Color Button
+          </Button>
+          <Button
+          size="sm"
+          style="neutral"
+          variant="transparent"
+          shape="rounded"
+          disabled={false}
+          showLeftIcon={false}
+          showRightIcon={false}
+          leftIcon={IconLeft}
+          rightIcon={IconRight}
+          >
+          Transparent Button
+          </Button>
+        </div>
+        <h3 className="w-full h-min text-body-lg font-semibold">Primary Button</h3>
+        <p className="w-full h-min text-body-md font-normal">The example below shows a basic button with primary brand color variation. It features hover and focus states for better interactive experience.</p>
+        <div className="w-full border border-white-600 rounded-curve-xl justify-center items-center px-6 py-8 flex gap-4">
           <Button
           size="md"
-          variant="error"
+          style="primary"
           showLeftIcon={false}
           showRightIcon={false}
           leftIcon={IconLeft}
           rightIcon={IconRight}
           >
-          Error Button
+          Gradient Button
           </Button>
           <Button
-          size="md"
-          variant="warning"
+          size="sm"
+          style="primary"
+          variant="outline"
+          shape="pill"
+          disabled={false}
           showLeftIcon={false}
           showRightIcon={false}
           leftIcon={IconLeft}
           rightIcon={IconRight}
           >
-          Warning Button
+          Pill Shaped Button
           </Button>
           <Button
-          size="lg"
-          variant="secondary"
+          size="sm"
+          style="primary"
+          variant="solid"
+          shape="rounded"
+          disabled={false}
           showLeftIcon={false}
           showRightIcon={false}
           leftIcon={IconLeft}
           rightIcon={IconRight}
           >
-          Secondary Large
+          Solid Color Button
           </Button>
           <Button
-          size="lg"
-          variant="success"
+          size="sm"
+          style="primary"
+          variant="transparent"
+          shape="rounded"
+          disabled={false}
           showLeftIcon={false}
           showRightIcon={false}
           leftIcon={IconLeft}
           rightIcon={IconRight}
           >
-          Success Large
+          Transparent Button
           </Button>
         </div>
       </div>
-      <h3 className="w-full h-min text-text-lg font-semibold">Primary Button</h3>
+      <h3 className="w-full h-min text-body-lg font-semibold">Primary Button</h3>
         <Button
-        size="sm"
-        variant="info"
+        size="md"
+        style="info"
         leftIcon={IconLeft}
         rightIcon={IconRight}
         >
@@ -75,7 +128,7 @@ Whether you're crafting call-to-actions, form submissions, or navigation trigger
         </Button>
         <Button
         size="md"
-        variant="primary"
+        style="primary"
         leftIcon={IconLeft}
         rightIcon={IconRight}
         >
@@ -83,7 +136,7 @@ Whether you're crafting call-to-actions, form submissions, or navigation trigger
         </Button>
         <Button
         size="lg"
-        variant="info"
+        style="info"
         leftIcon={IconLeft}
         rightIcon={IconRight}
         >

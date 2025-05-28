@@ -255,17 +255,6 @@ export default {
         'body-xs': '0.75rem', // 12px
         'body-xxs': '0.5rem', // 8px          
       },
-      lineHeight: {
-        'disp-xxl': '5rem', // 80px
-        'disp-xl-lg': '4.5rem', // 72px
-        'disp-md': '4rem', // 64px
-        'disp-sm-xs': '3rem', // 48px
-        'text-xxl': '2rem', // 32px
-        'text-xl-lg': '1.75rem', // 28px
-        'text-md': '1.5rem', // 24px
-        'text-sm-xs': '1.25rem', // 20px
-        'text-xxs': '1rem', // 16px          
-      },
       fontFamily: {
         disp: ['Inter', 'sans-serif'],
         body: ['Inter', 'sans-serif']
