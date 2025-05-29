@@ -18,11 +18,12 @@ Whether you're crafting call-to-actions, form submissions, or navigation trigger
           style="neutral"
           variant="solid"
           shape="rounded"
+          iconSize="lg"
           disabled={false}
           showLeftIcon={true}
           showRightIcon={true}
-          iconLeftName="Add-Circle-Filled" 
-          iconRightName="Add-Square-Multiple-Outline"
+          iconLeftName="Placeholder-Outline"
+          iconRightName="Placeholder-Filled"
           >
           Gradient Button
           </Button>
@@ -31,10 +32,13 @@ Whether you're crafting call-to-actions, form submissions, or navigation trigger
         <p className="w-full h-min text-body-md font-normal">The example below shows a basic button with primary brand color variation. It features hover and focus states for better interactive experience.</p>
         <div className="w-full border border-white-600 rounded-curve-xl justify-center items-center px-6 py-8 flex gap-4">
           <Button
-          size="md"
+          size="lg"
           style="primary"
-          showLeftIcon={false}
-          showRightIcon={false}
+          variant="gradient"
+          shape="pill"
+          iconSize="lg"
+          showLeftIcon={true}
+          showRightIcon={true}
           leftIcon={IconLeft}
           rightIcon={IconRight}
           >
@@ -46,7 +50,7 @@ Whether you're crafting call-to-actions, form submissions, or navigation trigger
           variant="outline"
           shape="pill"
           disabled={false}
-          showLeftIcon={false}
+          showLeftIcon={true}
           showRightIcon={false}
           leftIcon={IconLeft}
           rightIcon={IconRight}
@@ -71,8 +75,9 @@ Whether you're crafting call-to-actions, form submissions, or navigation trigger
           style="primary"
           variant="transparent"
           shape="rounded"
+          iconSize="sm"
           disabled={false}
-          showLeftIcon={false}
+          showLeftIcon={true}
           showRightIcon={false}
           leftIcon={IconLeft}
           rightIcon={IconRight}

@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 import Button from './components/button'
 import Sidebar from './components/sidebar'
 import Content from './components/content'
-import IconLeft from './icons/Placeholder-Outline.svg?react'
-import IconRight from './icons/Arrow-Enter-Left-Outline.svg?react'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('overview');

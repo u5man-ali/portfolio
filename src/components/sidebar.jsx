@@ -32,8 +32,8 @@ export default function Sidebar({ onSelect }) {
             shape="rounded"
             showLeftIcon={true}
             showRightIcon={false}
-            leftIcon={icon => section.icon ? <section.icon className="w-5 h-5" /> : null}
-            rightIcon={IconRight}
+            iconLeftName="Placeholder-Filled"
+            iconRightName="Add-Outline"
             key={section.id}
             onClick={() => handleSelect(section.id)}
             className="justify-start text-left" // override justify-center for the sidebar only

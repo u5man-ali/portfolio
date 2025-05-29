@@ -1,7 +1,6 @@
 // src/components/Button.jsx
-import PropTypes from "prop-types";
 import clsx from "clsx";
-import { lazy, Suspense, useMemo } from "react";
+import { useEffect, useState } from "react";
 
 const sizes = {
   sm: "text-body-sm px-3 py-1.5",
@@ -56,7 +55,6 @@ const styles = {
     transparent: "bg-transparent text-blue-400 hover:bg-blue-50 active:bg-blue-100"
   },
 };
-const loadIcon = (iconName) => lazy(() => import(`../icons/${iconName}.svg?react`)); // utility function to load svg icon from name string
 
 export default function Button({
   children,
@@ -68,9 +66,9 @@ export default function Button({
   className = "",
   disabled = false,
   showLeftIcon = true,
-  iconLeftName = "", // check filenames of icons in src/icons
+  iconLeftName = "Placeholder-Outline", // check filenames to use other icons in src/icons
   showRightIcon = true,
-  iconRightName = "", // check filenames of icons in src/icons
+  iconRightName = "Arrow-Enter-Left-Outline", // check filenames to use other icons in src/icons
   ...props
 }) {
   const baseClasses = "inline-flex items-center ${props.className || 'justify-center'} gap-2 font-medium transition-all";
@@ -78,8 +76,23 @@ export default function Button({
   const sizeClass = sizes[size];
   const shapeClass = shapes[shape];
   const variantClass = styles[style]?.[variant] ?? "";
-  const LeftIcon = useMemo(() => (iconLeftName ? loadIcon(iconLeftName) : null), [iconLeftName]);
-  const RightIcon = useMemo(() => (iconRightName ? loadIcon(iconRightName) : null), [iconRightName]);
+  const [LeftIcon, setLeftIcon] = useState(null);
+  const [RightIcon, setRightIcon] = useState(null);
+  
+  useEffect(
+    () => {
+      if(showLeftIcon && iconLeftName) {
+        import(`../icons/${iconLeftName}.svg?react`)
+        .then((icon) => setLeftIcon(() => icon.default))
+        .catch((error) => console.error(`Error loading left icon: ${error}`));
+      }
+      if(showRightIcon && iconRightName) {
+        import(`../icons/${iconRightName}.svg?react`)
+        .then((icon) => setRightIcon(() => icon.default))
+        .catch((error) => console.error(`Error loading right icon: ${error}`));
+      }
+    }, [showLeftIcon, iconLeftName, showRightIcon, iconRightName]
+  );
   return (
       <button
         className={clsx(
@@ -88,22 +101,13 @@ export default function Button({
         shapeClass,
         variantClass,
         stateClasses,
-        className
       )}
         disabled={disabled}
         {...props}
       >
-        {showLeftIcon && LeftIcon && (
-          <Suspense fallback = {<span className={iconSizes[iconSize]} />}>
-          <LeftIcon className={iconSizes[iconSize]} />
-          </Suspense> 
-        )}
+        {showLeftIcon && LeftIcon && <LeftIcon className={iconSizes[iconSize]} /> }
         {children}
-        {showRightIcon && RightIcon && (
-          <Suspense fallback = {<span className={iconSizes[iconSize]} />}>
-          <RightIcon className={iconSizes[iconSize]} />
-          </Suspense>
-        )}
+        {showRightIcon && RightIcon && <RightIcon className={iconSizes[iconSize]} /> }
       </button>
   );
 }
