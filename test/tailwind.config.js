@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-      urdu: ['"Noto Nastaliq Urdu"', 'serif'],
+      disp: ['"Noto Nastaliq Urdu"', 'serif'],
+      body: ['"Jameel Noori Nastaleeq"', 'serif'],
 }
     },
   },
