@@ -5,7 +5,7 @@ import Content from './components/content'
 import Button from './components/button';
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState('overview');
+  const [selectedPage, setSelectedPage] = useState('introduction');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const toggleSidebar = () => setSidebarOpen(prev => !prev);
   return (

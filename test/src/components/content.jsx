@@ -11,6 +11,7 @@ const componentMap = {
 };
 
 export default function Content({ selectedPage }) {
+
     const ComponentToRender = componentMap[selectedPage] || (() => <div className="text-body-lg font-medium">This page is empty. Please select another component from the sidebar to view its demo.</div>);
   return (
     <main className="flex-1 mb-4">

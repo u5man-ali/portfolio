@@ -4,8 +4,8 @@ import Button from './button';
                                                               
 const sections = [
   { id: "introduction", label: "تعارف"},
-  { id: "education", label: "تدریس", showLeftIcon: true, iconLeftName: "Arrow-Enter-Left-Outline" },
-  { id: "random", label: "متفرق",  showLeftIcon: true, iconLeftName: "Arrow-Enter-Left-Outline" },
+  { id: "education", label: "درس و تدریس", showLeftIcon: true, iconLeftName: "Arrow-Enter-Left-Outline" },
+  { id: "random", label: "متفرقات",  showLeftIcon: true, iconLeftName: "Arrow-Enter-Left-Outline" },
     
 ];
 

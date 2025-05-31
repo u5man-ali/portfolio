@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
       disp: ['"Noto Nastaliq Urdu"', 'serif'],
+      //arbi: ['"Amiri Quran"', 'serif'],
+      arbi: ['"Noto Sans Arabic"', 'sans-serif'],
       body: ['"Jameel Noori Nastaleeq"', 'serif'],
       },
       screens: {
