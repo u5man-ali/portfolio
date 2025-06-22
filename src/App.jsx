@@ -8,6 +8,7 @@ import FAB from './components/fab';
 import hamburger from './icons/Navigation-Filled.svg?react'
 import sun from './icons/Weather-Sunny-Outline.svg?react'
 import moon from './icons/Weather-Moon-Outline.svg?react'
+import logo from './DezineCrafts.svg'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('introduction');
@@ -42,7 +43,7 @@ function App() {
           >
             {/* this button has not text label, only left icon */}
         </FAB>
-        <img src="DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-8 h-8 sm:w-12 sm:h-12"></img>
+        <img src={logo} alt="Dezine Crafts Logo" className="w-8 h-8 sm:w-12 sm:h-12"></img>
         <h1 className="w-full text-body-md sm:text-body-xxl font-semibold text-brand-primary-default">DezineCrafts - Ultimate UI Kit</h1>
         <Button //theme toggle button
           size="sm"
