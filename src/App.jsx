@@ -8,10 +8,10 @@ import FAB from './components/fab';
 import hamburger from './icons/Navigation-Filled.svg?react'
 import sun from './icons/Weather-Sunny-Outline.svg?react'
 import moon from './icons/Weather-Moon-Outline.svg?react'
-import logo from './DezineCrafts.svg'
+import logo from './usman.svg'
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState('introduction');
+  const [selectedPage, setSelectedPage] = useState('landingPage');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   
   const [theme, setTheme] = useState(() => {
@@ -43,8 +43,8 @@ function App() {
           >
             {/* this button has not text label, only left icon */}
         </FAB>
-        <img src={logo} alt="Dezine Crafts Logo" className="w-8 h-8 sm:w-12 sm:h-12"></img>
-        <h1 className="w-full text-body-md sm:text-body-xxl font-semibold text-brand-primary-default">DezineCrafts - Ultimate UI Kit</h1>
+        <img src={logo} alt="Dezine Crafts Logo" className="w-8 h-8 sm:w-12 sm:h-12 rounded-pill border border-brand-primary-strong bg-brand-primary-rest"></img>
+        <h1 className="w-full text-body-md sm:text-body-xxl font-semibold text-brand-primary-default">Syed Usman Ali</h1>
         <Button //theme toggle button
           size="sm"
           variant="outline"
@@ -59,23 +59,25 @@ function App() {
         </div>
       </nav>
       <div className="w-full flex gap-0 min-h-full max-w-7xl mx-auto relative">
-          {/* Backdrop overlay: only visible when sidebar is open on mobile */}
+          {/*
+          
           {sidebarOpen && (
             <div className="fixed w-full inset-0 bg-black/30 z-10 lg:hidden"
             onClick={() => setSidebarOpen(false)}
             ></div>
           )}
-          {/* Sidebar block: show if open on mobile, always show on large screens */}
+          
           <div className={`fixed lg:sticky top-[54px] sm:top-[80px] z-30 self-start left-0 h-[calc(100vh-54px)] sm:h-[calc(100vh-80px)] w-60 shrink-0 bg-neutral-tertiary border-r border-neutral-regular transition-transform duration-300 ease-in-out
           ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:block`}
           >
-            {/*Sidebar imported from /components/sidebar.jsx*/}
+            
             <Sidebar onSelect={(id) => {
               setSelectedPage(id);
               setSidebarOpen(false);
             }} 
             />
           </div>
+          */}
           <div className="w-full p-6">
             {/*Main Content imported from /components/content.jsx*/}
             <Content selectedPage={selectedPage} />

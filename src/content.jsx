@@ -1,28 +1,9 @@
 // src/components/content.jsx
-import Introduction from './pages/introduction';
-import ButtonPage from './pages/button-demo';
-import BadgePage from './pages/badge-demo';
-import FABPage from './pages/fab-demo';
-import AccordionPage from './pages/accordion-demo';
-import TabPage from './pages/tab-demo';
-import TablePage from './pages/table-demo';
-import InputPage from './pages/input-demo';
-import SwitchPage from './pages/switch-demo';
-import RadioPage from './pages/radio-demo';
-import CheckboxPage from './pages/checkbox-demo';
+import LandingPage from './pages/landing-page';
 
 const componentMap = {
-  introduction: Introduction,
-  button: ButtonPage,
-  fab: FABPage,
-  tab: TabPage,
-  accordion: AccordionPage,
-  table: TablePage,
-  badge: BadgePage,
-  input: InputPage,
-  switch: SwitchPage,
-  radio: RadioPage,
-  checkbox: CheckboxPage,
+  landingPage: LandingPage,
+  introduction: LandingPage,
   // Add other components here as needed
 };
 

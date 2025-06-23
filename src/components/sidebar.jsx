@@ -8,8 +8,8 @@ import chevronDown from '../icons/Chevron-Down-Outline.svg?react'
 // Sidebar structure with parent and child sections
 const sections = [
   { 
-    id: "introduction",
-    label: "Introduction"
+    id: "landingPage",
+    label: "Home"
   },
   { 
     id: "basic-components",
@@ -45,7 +45,7 @@ const sections = [
 ];
 
 export default function Sidebar({ onSelect }) {
-  const [active, setActive] = useState("introduction");
+  const [active, setActive] = useState("landingPage");
   const [expanded, setExpanded] = useState({});
 
   const handleSelect = (id, parentId = null) => {
