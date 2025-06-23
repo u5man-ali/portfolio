@@ -8,7 +8,6 @@ import FAB from './components/fab';
 import hamburger from './icons/Navigation-Filled.svg?react'
 import sun from './icons/Weather-Sunny-Outline.svg?react'
 import moon from './icons/Weather-Moon-Outline.svg?react'
-import logo from './usman.svg'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('landingPage');
@@ -43,7 +42,7 @@ function App() {
           >
             {/* this button has not text label, only left icon */}
         </FAB>
-        <img src={logo} alt="Dezine Crafts Logo" className="w-8 h-8 sm:w-12 sm:h-12 rounded-pill border border-brand-primary-strong bg-brand-primary-rest"></img>
+        <img src="usman.png" alt="Usman's portrait" className="w-8 h-8 sm:w-12 sm:h-12 rounded-pill border border-brand-primary-strong bg-brand-primary-rest"></img>
         <h1 className="w-full text-body-md sm:text-body-xxl font-semibold text-brand-primary-default">Syed Usman Ali</h1>
         <Button //theme toggle button
           size="sm"
