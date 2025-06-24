@@ -67,19 +67,19 @@ export default function Carousel({ slides = [] }) {
               startTimeRef.current = null;
             }}
             className={clsx(
-              "relative w-full before:block before:pb[100%] min-h-10x sm:h-16x rounded border-2 transition-all bg-neutral-primary",
-              index === currentSlide ? "border-brand-primary-strong" : "border-neutral-regular"
+              "relative w-full before:block before:pb[100%] min-h-10x sm:h-16x rounded-curve-lg border-2 transition-all",
+              index === currentSlide ? "border-brand-primary-strong bg-brand-primary-light" : "border-neutral-regular"
             )}
           >
             {/* Placeholder thumbnail */}
-            <div className="w-full h-min flex items-center justify-center text-xs">
+            <div className="w-full h-min flex items-center justify-center text-body-sm sm:text-body-md text-neutral-default ">
               {slides[index].title}
             </div>
           </button>
         ))}
       </div>
       {/* Progress bar */}
-        <div className="bottom-0 left-0 w-full h-1 rounded-pill bg-neutral-tertiary">
+        <div className="w-full h-1 rounded-pill bg-neutral-tertiary">
           <div
             ref={progressRef}
             className="h-full bg-brand-primary-rest"
@@ -92,7 +92,6 @@ export default function Carousel({ slides = [] }) {
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        
         <div className="absolute inset-0 flex items-center justify-center text-3xl text-neutral-placeholder">
           {slides[currentSlide]?.content || `Slide ${currentSlide + 1}`}
         </div>

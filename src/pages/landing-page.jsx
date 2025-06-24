@@ -6,7 +6,7 @@ export default function LandingPage() {
       id: 1,
       title: "AI Based Web App",
       content: (
-        <div className="w-full h-full flex items-start justify-center bg-neutral-primary">
+        <div className="w-full h-full flex items-start justify-center text-neutral-default bg-neutral-primary">
           Here I'll show project no. 1
         </div>
       ),
@@ -15,7 +15,7 @@ export default function LandingPage() {
       id: 2,
       title: "Web3 Mobile App",
       content: (
-        <div className="w-full h-full flex items-start justify-center bg-neutral-primary">
+        <div className="w-full h-full flex items-start justify-center text-neutral-default bg-neutral-primary">
           This will be project number 2
         </div>
       ),
@@ -24,7 +24,7 @@ export default function LandingPage() {
       id: 3,
       title: "Tailorize Mobile App",
       content: (
-        <div className="w-full h-full flex items-start justify-center bg-neutral-primary">
+        <div className="w-full h-full flex items-start justify-center text-neutral-default bg-neutral-primary">
           and this will be project number 3
         </div>
       ),
@@ -33,7 +33,7 @@ export default function LandingPage() {
       id: 4,
       title: "DezineCraft UI Kit",
       content: (
-        <div className="w-full h-full flex items-start justify-center bg-neutral-primary">
+        <div className="w-full h-full flex items-start justify-center text-neutral-default bg-neutral-primary">
           This will be the page to show design system
         </div>
       ),
@@ -42,7 +42,7 @@ export default function LandingPage() {
       id: 5,
       title: "Usability Research",
       content: (
-        <div className="w-full h-full flex items-start justify-center bg-neutral-primary">
+        <div className="w-full h-full flex items-start justify-center text-neutral-default bg-neutral-primary">
           Here one of the project from research will be shown
         </div>
       ),
@@ -52,10 +52,11 @@ export default function LandingPage() {
   return (
     <div className="flex justify-center items-center gap-4 flex-wrap">
       <div className="w-full flex justify-start items-center gap-4 flex-wrap">
-        <h1 className="w-full h-min text-body-xxl text-neutral-default font-bold border-b border-neutral-regular py-2">About Me</h1>
+        <h1 className="w-full h-min text-body-xxl text-center text-neutral-default font-bold border-b border-neutral-regular py-2">About Me</h1>
         <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold">Design Engineer | UI/UX Design | UX Research<br></br></h3>
         <p className="text-neutral-hovered ">I’m a self-taught UX/UI designer with 15+ years of professional experience, including 3+ years in design-focused on creating functional, user-centered digital products through research, interface design, and usability evaluations.</p>
       </div>
+      <h1 className="w-full h-min text-body-xxl text-center text-neutral-default font-bold border-b border-neutral-regular py-2">Project Case Studies</h1>
       <Carousel slides={slides}/>
       <div className="w-full flex justify-start items-center gap-4 mb-4 flex-wrap">
         <h1 className="w-full h-min text-body-xxl text-neutral-default font-bold border-b border-neutral-regular py-2">DezineCrafts: Ultimate UI Kit</h1>
