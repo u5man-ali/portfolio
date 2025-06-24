@@ -67,35 +67,34 @@ export default function Carousel({ slides = [] }) {
               startTimeRef.current = null;
             }}
             className={clsx(
-              "relative w-full before:block before:pb[100%] sm:w-[10%] sm:h-10x rounded border-2 transition-all",
+              "relative w-full before:block before:pb[100%] min-h-10x sm:h-16x rounded border-2 transition-all bg-neutral-primary",
               index === currentSlide ? "border-brand-primary-strong" : "border-neutral-regular"
             )}
           >
             {/* Placeholder thumbnail */}
-            <div className="w-full h-min bg-neutral-bg flex items-center justify-center text-xs">
+            <div className="w-full h-min flex items-center justify-center text-xs">
               {slides[index].title}
             </div>
           </button>
         ))}
       </div>
-
+      {/* Progress bar */}
+        <div className="bottom-0 left-0 w-full h-1 rounded-pill bg-neutral-tertiary">
+          <div
+            ref={progressRef}
+            className="h-full bg-brand-primary-rest"
+            style={{ width: `${progress}%` }}
+          />
+        </div>  
       {/* Slide container */}
       <div
         className="relative w-full h-[65vh] bg-neutral-tertiary flex items-center justify-center"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
+        
         <div className="absolute inset-0 flex items-center justify-center text-3xl text-neutral-placeholder">
           {slides[currentSlide]?.content || `Slide ${currentSlide + 1}`}
-        </div>
-
-        {/* Progress bar */}
-        <div className="absolute bottom-0 left-0 w-full h-0.5 rounded-pill bg-neutral-tertiary">
-          <div
-            ref={progressRef}
-            className="h-full bg-brand-primary-rest"
-            style={{ width: `${progress}%` }}
-          />
         </div>
       </div>
     </div>
