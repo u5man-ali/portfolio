@@ -6,12 +6,26 @@ export default function LandingPage() {
       id: 1,
       title: "AI Based Web App",
       content: (
-        <div className="w-full h-full flex items-start justify-center text-neutral-default bg-neutral-primary">
-          Here I'll show project no. 1
+        <div className="w-full h-full flex-wrap items-start justify-center text-body-md text-neutral-default bg-neutral-primary p-4">
+          <div className="w-full flex flex-row gap-4 items-center">
+            <img src="customgpt.svg" alt="customgpt logo" className="w-12 h-12 rounded-pill "></img>
+            <h1 className="w-full h-min text-body-lg sm:text-body-xxl text-neutral-default font-semibold py-2">CustomGPT - Redesigning AI Agent Workflows for Clarity and Usability</h1>
+          </div>
+          <div className="w-full h-min flex flex-col-reverse sm:flex-row gap-4 items-start">
+            <p className="min-w-48x w-full text-neutral-hovered mb-4">
+            💠 <strong>Role:</strong> UX/UI Designer <br></br>
+            💠 <strong>Timeline:</strong> Mar 2024 - Nov 2024 <br></br>
+            💠 <strong>Focus:</strong> UX Architecture, Interaction Design, Design System <br></br>
+            💠 <strong>Tools:</strong> Figma, ChatGPT, Claude, Stakeholder Workshops <br></br>
+            </p>
+          <div className="min-w-48x w-full flex bg-brand-primary-subtle justify-center">
+            Image container
+          </div>
+          </div>
         </div>
       ),
     },
-    {
+    /*{
       id: 2,
       title: "Web3 Mobile App",
       content: (
@@ -40,13 +54,13 @@ export default function LandingPage() {
     },
     {
       id: 5,
-      title: "Usability Research",
+      title: "Usability Testing",
       content: (
         <div className="w-full h-full flex items-start justify-center text-neutral-default bg-neutral-primary">
           Here one of the project from research will be shown
         </div>
       ),
-    },
+    },*/
   ];
 
   return (
