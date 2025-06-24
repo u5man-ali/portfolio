@@ -33,6 +33,7 @@ export default function LandingPage() {
       ),
     },
   ];
+
   return (
     <div className="flex justify-center items-center gap-4 mb-4 flex-wrap">
       <Carousel slides={slides}/>

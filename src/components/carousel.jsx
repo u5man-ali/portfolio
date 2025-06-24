@@ -55,7 +55,7 @@ export default function Carousel({ slides = [] }) {
   }, [currentSlide, isPaused, slides.length]);
 
   return (
-    <div className="w-full h-[50vh] mx-auto mb-12">
+    <div className="w-full mx-auto ">
       {/* Pagination thumbnails */}
       <div className="flex h-min justify-center items-center gap-2 mb-4">
         {slides.map((_, index) => (
@@ -67,13 +67,13 @@ export default function Carousel({ slides = [] }) {
               startTimeRef.current = null;
             }}
             className={clsx(
-              "relative w-full before:block before:pb[100%] sm:w-[10%] sm:h-[10%] rounded border-2 transition-all",
+              "relative w-full before:block before:pb[100%] sm:w-[10%] sm:h-10x rounded border-2 transition-all",
               index === currentSlide ? "border-brand-primary-strong" : "border-neutral-regular"
             )}
           >
             {/* Placeholder thumbnail */}
             <div className="w-full h-min bg-neutral-bg flex items-center justify-center text-xs">
-              {index + 1}
+              {slides[index].title}
             </div>
           </button>
         ))}
@@ -81,7 +81,7 @@ export default function Carousel({ slides = [] }) {
 
       {/* Slide container */}
       <div
-        className="relative w-full h-full bg-neutral-tertiary flex items-center justify-center"
+        className="relative w-full h-[65vh] bg-neutral-tertiary flex items-center justify-center"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
