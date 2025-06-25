@@ -9,12 +9,12 @@ const sizes = {
   },
   md: {
     text: "text-body-md",
-    padding: "px-4 py-1.5",
+    padding: "px-3 py-1.5",
     icon: "w-5 h-5",
   },
   lg: {
     text: "text-body-lg",
-    padding: "px-5 py-2",
+    padding: "px-3 py-2",
     icon: "w-6 h-6",
   },
 };
@@ -51,13 +51,13 @@ export default function Input({
   return (
     <div className="flex flex-col gap-1 w-full">
       {label && (
-        <label htmlFor={id} className="font-medium text-neutral-default">
+        <label htmlFor={id} className="font-disp font-medium text-neutral-default">
           {label}
         </label>
       )}
       <div
         className={clsx(
-          "flex items-center border bg-white transition-all bg-neutral-primary",
+          "flex items-center border bg-neutral-primary transition-all font-body font-normal",
           multiline? null : padding,
           text,
           shapeClass,
@@ -65,28 +65,29 @@ export default function Input({
           className
         )}
       >
-        {LeftIcon && <LeftIcon className={clsx(icon, "mr-2")} />}
+        {LeftIcon && <LeftIcon className={clsx(icon, "mr-2 text-neutral-placeholder")} />}
         <InputElement
           id={id}
           className={clsx(
-            "flex-1 bg-transparent outline-none resize-none",
+            "flex-1 bg-transparent outline-none resize-none ",
             multiline? "resize-y" : "resize-none", //if multimline is true add a resize icon
             multiline? padding : null, //if multiline is true adjust padding 
             LeftIcon && "pl-1",
-            RightIcon && "pr-1"
+            RightIcon && "pr-1",
+            "placeholder:text-neutral-placeholder placeholder:font-body placeholder:font-normal"
           )}
           aria-invalid={hasError}
           aria-describedby={hintOrErrorId}
           {...props}
         />
-        {RightIcon && <RightIcon className={clsx(icon, "ml-2")} />}
+        {RightIcon && <RightIcon className={clsx(icon, "ml-2 text-neutral-placeholder")} />}
       </div>
       {hasError ? (
-        <p id={hintOrErrorId} className="text-semantic-error-default text-sm">
+        <p id={hintOrErrorId} className="text-semantic-error-default text-sm font-body font-light">
           {error}
         </p>
       ) : hint ? (
-        <p id={hintOrErrorId} className="text-neutral-placeholder text-sm">
+        <p id={hintOrErrorId} className="text-neutral-placeholder text-sm font-body font-light">
           {hint}
         </p>
       ) : null}

@@ -48,7 +48,7 @@ export default function Dropdown({ isOpen, children }) {
   return (
     <div
       style={{ height }}
-      className="transition-[height] duration-300 ease-in-out overflow-hidden"
+      className="transition-[height] duration-300 ease-in-out overflow-hidden font-body font-normal"
     >
       <div ref={innerRef} className="py-1 flex flex-col gap-1">
         {children}

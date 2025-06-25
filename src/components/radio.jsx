@@ -13,8 +13,8 @@ export default function RadioButton({
   className = "",
 }) {
   return (
-    <div className={clsx("flex items-start gap-2", className)}>
-      <div className="flex items-center">
+    <div className={clsx("flex items-start gap-3", className)}>
+      <div className="flex items-center py-1">
         <input
           type="radio"
           id={id}
@@ -30,9 +30,9 @@ export default function RadioButton({
         />
       </div>
       <label htmlFor={id} className="cursor-pointer select-none">
-        <span className="block text-sm font-medium text-neutral-strong">{label}</span>
+        <span className="block text-md font-body font-medium text-neutral-strong">{label}</span>
         {description && (
-          <span className="block text-xs text-neutral-placeholder">{description}</span>
+          <span className="block text-sm font-body font-normal text-neutral-placeholder">{description}</span>
         )}
       </label>
     </div>

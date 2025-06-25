@@ -58,7 +58,7 @@ export default function Badge({
   iconRight = null, //default is null, can obtain pre-imported svg icons as react component
   ...props
 }) {
-  const baseClasses = "inline-flex items-center gap-2 font-medium transition-all whitespace-nowrap";
+  const baseClasses = "inline-flex items-center gap-2 font-body font-medium transition-all whitespace-nowrap";
   const stateClasses = disabled ? "opacity-60 cursor-not-allowed pointer-events-none" : "";
   const sizeClass = sizes[size];
   const shapeClass = shapes[shape];

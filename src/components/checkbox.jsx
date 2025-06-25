@@ -62,9 +62,9 @@ export default function Checkbox({
       </div>
 
       <label htmlFor={id} className="cursor-pointer select-none">
-        <span className="block text-md font-medium text-neutral-strong">{label}</span>
+        <span className="block text-md font-disp font-normal text-neutral-strong">{label}</span>
         {description && (
-          <span className="block text-sm text-neutral-placeholder">{description}</span>
+          <span className="block text-sm font-body font-normal text-neutral-placeholder">{description}</span>
         )}
       </label>
     </div>
