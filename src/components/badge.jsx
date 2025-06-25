@@ -21,27 +21,27 @@ const iconSizes = {
 const styles = {
   primary: {
     filled: "bg-brand-primary-light text-brand-primary-default border border-brand-primary-default",
-    outline: "text-brand-primary-rest border border-brand-primary-hover",
+    outline: "text-brand-primary-default border border-brand-primary-regular",
   },
   neutral: {
     filled: "bg-neutral-tertiary text-neutral-placeholder border border-neutral-regular",
-    outline: "text-neutral-hovered border border-neutral-hover",
+    outline: "text-neutral-hovered border border-neutral-strong",
   },
   success: {
     filled: "bg-semantic-success-light text-semantic-success-default border border-semantic-success-regular",
-    outline: "text-semantic-success-rest border border-semantic-success-hover",
+    outline: "text-semantic-success-default border border-semantic-success-regular",
   },
   error: {
     filled: "bg-semantic-error-light text-semantic-error-default border border-semantic-error-regular",
-    outline: "text-semantic-error-rest border border-semantic-error-hover",
+    outline: "text-semantic-error-default border border-semantic-error-regular",
   },
   warning: {
     filled: "bg-semantic-warning-light text-semantic-warning-default border border-semantic-warning-regular",
-    outline: "text-semantic-warning-rest border border-semantic-warning-hover",
+    outline: "text-semantic-warning-default border border-semantic-warning-regular",
   },
   info: {
     filled: "bg-semantic-info-light text-semantic-info-default border border-semantic-info-regular",
-    outline: "text-semantic-info-hover border border-semantic-info-hover",
+    outline: "text-semantic-info-default border border-semantic-info-regular",
   },
 };
 
