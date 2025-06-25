@@ -100,8 +100,6 @@
     --border-neutral-regular: theme('colors.stone.300'); /*regular border*/
     --border-neutral-subtle: theme('colors.stone.100'); /*subtle border*/
     --border-neutral-strong: theme('colors.stone.800'); /*strong border */
-    /*--border-neutral-inverse: variable from Figma is served by --neutral-bw*/
-    --border-neutral-mute: theme('colors.stone.400'); /*muted border */
 
     --border-primary-regular: theme('colors.cyan.400'); /*regular border*/
     --border-primary-subtle: theme('colors.cyan.100'); /*subtle border*/
@@ -227,8 +225,6 @@
     --border-neutral-regular: theme('colors.stone.600'); /*regular border*/
     --border-neutral-subtle: theme('colors.stone.800'); /*subtle border*/
     --border-neutral-strong: theme('colors.stone.200'); /*strong border */
-    /*--border-neutral-inverse: variable from Figma is served by --neutral-bw*/
-    --border-neutral-mute: theme('colors.stone.400'); /*muted border */
 
     --border-primary-regular: theme('colors.cyan.600'); /*regular border*/
     --border-primary-subtle: theme('colors.cyan.800'); /*subtle border*/
