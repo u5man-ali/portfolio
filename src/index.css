@@ -195,33 +195,33 @@
     --text-neutral-mute: theme('colors.stone.500'); /*muted text */
     --text-neutral-placeholder: theme('colors.stone.400'); /*placeholder text for forms, inputs and other uses*/
 
-    --text-primary-rest: theme('colors.cyan.100'); /*component fill for the rest state mostly buttons*/
+    --text-primary-rest: theme('colors.cyan.300'); /*component fill for the rest state mostly buttons*/
     --text-primary-hover: theme('colors.cyan.200'); /*component fill for the hover state mostly buttons*/
-    --text-primary-focus: theme('colors.cyan.300'); /*component fill for the focus state mostly buttons*/
+    --text-primary-focus: theme('colors.cyan.100'); /*component fill for the focus state mostly buttons*/
 
-    --text-secondary-rest: theme('colors.purple.100'); /*component fill for the rest state mostly buttons*/
+    --text-secondary-rest: theme('colors.purple.300'); /*component fill for the rest state mostly buttons*/
     --text-secondary-hover: theme('colors.purple.200'); /*component fill for the hover state mostly buttons*/
-    --text-secondary-focus: theme('colors.purple.300'); /*component fill for the focus state mostly buttons*/
+    --text-secondary-focus: theme('colors.purple.100'); /*component fill for the focus state mostly buttons*/
 
-    --text-tertiary-rest: theme('colors.yellow.100'); /*component fill for the rest state mostly buttons*/
+    --text-tertiary-rest: theme('colors.yellow.300'); /*component fill for the rest state mostly buttons*/
     --text-tertiary-hover: theme('colors.yellow.200'); /*component fill for the hover state mostly buttons*/
-    --text-tertiary-focus: theme('colors.yellow.300'); /*component fill for the focus state mostly buttons*/
+    --text-tertiary-focus: theme('colors.yellow.100'); /*component fill for the focus state mostly buttons*/
     
-    --text-success-rest: theme('colors.emerald.100'); /*component fill for the rest state mostly buttons*/
+    --text-success-rest: theme('colors.emerald.300'); /*component fill for the rest state mostly buttons*/
     --text-success-hover: theme('colors.emerald.200'); /*component fill for the hover state mostly buttons*/
-    --text-success-focus: theme('colors.emerald.300'); /*component fill for the focus state mostly buttons*/
+    --text-success-focus: theme('colors.emerald.100'); /*component fill for the focus state mostly buttons*/
 
-    --text-error-rest: theme('colors.red.100'); /*component fill for the rest state mostly buttons*/
+    --text-error-rest: theme('colors.red.300'); /*component fill for the rest state mostly buttons*/
     --text-error-hover: theme('colors.red.200'); /*component fill for the hover state mostly buttons*/
-    --text-error-focus: theme('colors.red.300'); /*component fill for the focus state mostly buttons*/
+    --text-error-focus: theme('colors.red.100'); /*component fill for the focus state mostly buttons*/
 
-    --text-warning-rest: theme('colors.amber.100'); /*component fill for the rest state mostly buttons*/
+    --text-warning-rest: theme('colors.amber.300'); /*component fill for the rest state mostly buttons*/
     --text-warning-hover: theme('colors.amber.200'); /*component fill for the hover state mostly buttons*/
-    --text-warning-focus: theme('colors.amber.300'); /*component fill for the focus state mostly buttons*/
+    --text-warning-focus: theme('colors.amber.100'); /*component fill for the focus state mostly buttons*/
 
-    --text-info-rest: theme('colors.indigo.100'); /*component fill for the rest state mostly buttons*/
+    --text-info-rest: theme('colors.indigo.300'); /*component fill for the rest state mostly buttons*/
     --text-info-hover: theme('colors.indigo.200'); /*component fill for the hover state mostly buttons*/
-    --text-info-focus: theme('colors.indigo.300'); /*component fill for the focus state mostly buttons*/
+    --text-info-focus: theme('colors.indigo.100'); /*component fill for the focus state mostly buttons*/
 
     /*border colors*/
     --border-neutral-regular: theme('colors.stone.600'); /*regular border*/
