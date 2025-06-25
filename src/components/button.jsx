@@ -74,7 +74,7 @@ export default function Button({
   iconRight = null,
   ...props
 }) {
-  const baseClasses = "inline-flex items-center gap-2 font-disp font-medium transition-all whitespace-nowrap";
+  const baseClasses = "inline-flex items-center gap-2 font-body font-medium transition-all whitespace-nowrap";
   const stateClasses = disabled ? "opacity-60 cursor-not-allowed pointer-events-none" : "";
   const sizeClass = sizes[size];
   const shapeClass = shapes[shape];

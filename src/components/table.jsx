@@ -48,6 +48,7 @@ export default function Table({
               <th
                 key={index}
                 className={clsx(
+                  "font-heading font-medium",
                   sizes[size]?.cell,
                   styles[style]?.head,
                 )}
@@ -61,14 +62,16 @@ export default function Table({
           {rows.map((row, rowIdx) => (
             <tr
               key={rowIdx}
-              className={clsx("transition-all", styles[style]?.row)}
+              className={clsx(
+                "transition-all font-body font-normal",
+                styles[style]?.row
+              )}
             >
               {row.map((cell, cellIdx) => (
                 <td
                   key={cellIdx}
                   className={clsx(
                     sizes[size]?.cell,
-                    
                   )}
                 >
                   {cell}

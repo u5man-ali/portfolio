@@ -60,7 +60,7 @@ export default function Tabs({
             onClick={() => handleSelect(tab.id, index)}
             role="button"
             className={clsx(
-              "transition-all duration-300 ease-in-out font-medium cursor-pointer focus:outline-none text-center text-nowrap",
+              "transition-all duration-300 ease-in-out font-heading font-medium cursor-pointer focus:outline-none text-center text-nowrap",
               sizes[size]?.padding,
               sizes[size]?.corner,
               styles[style]?.base,

@@ -23,7 +23,7 @@ export default function Switch({
   return (
     <div className="flex items-center gap-2">
       {label && (
-        <label htmlFor={id} className="text-neutral-strong text-sm">
+        <label htmlFor={id} className="text-neutral-strong font-body font-normal text-body-md">
           {label}
         </label>
       )}

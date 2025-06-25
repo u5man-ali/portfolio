@@ -69,7 +69,7 @@ export default function Accordion({
         tabIndex={0}
         onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && toggleAccordion()}
         className={clsx(
-          "flex w-full items-center justify-between font-disp font-medium cursor-pointer focus:outline-none",
+          "flex w-full items-center justify-between font-heading font-medium cursor-pointer focus:outline-none",
           isExpanded ? "border-2 border-neutral-subtle rounded-bl-none rounded-br-none" : "",
           isExpanded && styles[style]?.expanded,
           sizes[size]?.padding,

@@ -6,7 +6,7 @@ export default function LandingPage() {
       id: 1,
       title: "AI Based Web App",
       content: (
-        <div className="w-full h-full flex-wrap items-start justify-center text-body-md text-neutral-default bg-[#dcd7ff] p-4">
+        <div className="w-full h-full flex-wrap items-start justify-center font-body text-body-md text-neutral-default bg-[#dcd7ff] p-4">
           <div className="w-full flex flex-row gap-4 items-center">
             <img src="customgpt.svg" alt="customgpt logo" className="w-12 h-12 rounded-pill "></img>
             <h1 className="w-full h-min text-body-lg sm:text-body-xxl text-neutral-default font-semibold py-2">CustomGPT - Redesigning AI Agent Workflows for Clarity and Usability</h1>
@@ -65,7 +65,7 @@ export default function LandingPage() {
   ];
 
   return (
-    <div className="flex justify-center items-center gap-4 flex-wrap">
+    <div className="flex justify-center items-center gap-4 flex-wrap font-body">
       <div className="w-full flex justify-start items-center gap-4 flex-wrap">
         <h1 className="w-full h-min text-body-xxl text-center text-neutral-default font-bold border-b border-neutral-regular py-2">About Me</h1>
         <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold">Design Engineer | UI/UX Design | UX Research<br></br></h3>

@@ -164,8 +164,15 @@ export default {
         'body-xxs': '0.5rem', // 8px          
       },
       fontFamily: {
-        disp: ['Inter', 'sans-serif'],
+        heading: ['Inter', 'sans-serif'],
         body: ['Inter', 'sans-serif']
+      },
+      fontWeight: {
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
       },
       spacing: {
         'null': '0px',
