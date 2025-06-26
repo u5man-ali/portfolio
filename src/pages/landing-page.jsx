@@ -67,11 +67,11 @@ export default function LandingPage() {
   return (
     <div className="flex justify-center items-center gap-4 flex-wrap font-body">
       <div className="w-full flex justify-start items-center gap-4 flex-wrap">
-        <h1 className="w-full h-min text-body-xxl text-center text-neutral-default font-bold border-b border-neutral-regular py-2">About Me</h1>
-        <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold">Design Engineer | UI/UX Design | UX Research<br></br></h3>
-        <p className="text-neutral-hovered ">I’m a self-taught UX/UI designer with 15+ years of professional experience, including 3+ years in design-focused on creating functional, user-centered digital products through research, interface design, and usability evaluations.</p>
+        <h3 className="w-full h-min text-body-lg text-neutral-default font-medium">Design Engineer | UI/UX Design | UX Research<br></br></h3>
+        <p className="text-neutral-hovered ">Self-taught UX-UI designer helping teams turn ideas into intuitive, research-driven interfaces, backed by 15+ years of cross-industry, customer-support experience and certifications from IBM and Google.</p>
+        <p className="text-neutral-hovered ">Previously in Healthcare tech, I bring a unique blend of design, research, and problem-solving to every project, helping my clients and their digital products become more intuitive and effective.</p>
       </div>
-      <h1 className="w-full h-min text-body-xxl text-center text-neutral-default font-bold border-b border-neutral-regular py-2">Project Case Studies</h1>
+      <h1 className="w-full h-min text-body-xxl text-center text-neutral-default font-bold border-b border-neutral-regular py-2">My Projects</h1>
       <Carousel slides={slides}/>
       <div className="w-full flex justify-start items-center gap-4 mb-4 flex-wrap">
         <h1 className="w-full h-min text-body-xxl text-neutral-default font-bold border-b border-neutral-regular py-2">DezineCrafts: Ultimate UI Kit</h1>

@@ -42,9 +42,9 @@ function App() {
           >
         </FAB>*/}
         <img src="usman.png" alt="Usman's portrait" className="w-8 h-8 sm:w-12 sm:h-12 rounded-pill border border-brand-primary-strong bg-brand-primary-rest"></img>
-        <h1 className="w-full text-body-md sm:text-body-xxl font-semibold text-brand-primary-default">Syed Usman Ali</h1>
+        <h1 className="w-full text-body-md sm:text-body-xxl font-heading font-semibold text-brand-primary-default">Syed Usman Ali</h1>
         <Button //theme toggle button
-          size="sm"
+          size="md"
           variant="outline"
           style="primary"
           shape="pill"

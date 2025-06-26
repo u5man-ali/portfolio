@@ -1,4 +1,5 @@
 /* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,11 +18,11 @@
     --neutral-hover: theme('colors.stone.600'); /*component fill for the hover state mostly buttons*/
     --neutral-focus: theme('colors.stone.800'); /*component fill for the focus state mostly buttons*/
 
-    --primary-rest: theme('colors.cyan.700'); /*component fill for the rest state mostly buttons*/
-    --primary-hover: theme('colors.cyan.600'); /*component fill for the hover state mostly buttons*/
-    --primary-focus: theme('colors.cyan.800'); /*component fill for the focus state mostly buttons*/
-    --primary-bg: theme('colors.cyan.50'); /*brand primary background*/
-    --primary-light: theme('colors.cyan.100'); /*subtle shade of brand primary*/
+    --primary-rest: theme('colors.sky.700'); /*component fill for the rest state mostly buttons*/
+    --primary-hover: theme('colors.sky.600'); /*component fill for the hover state mostly buttons*/
+    --primary-focus: theme('colors.sky.800'); /*component fill for the focus state mostly buttons*/
+    --primary-bg: theme('colors.sky.50'); /*brand primary background*/
+    --primary-light: theme('colors.sky.100'); /*subtle shade of brand primary*/
 
     --secondary-rest: theme('colors.purple.700'); /*component fill for the rest state mostly buttons*/
     --secondary-hover: theme('colors.purple.600'); /*component fill for the hover state mostly buttons*/
@@ -68,9 +69,9 @@
     --text-neutral-mute: theme('colors.stone.400'); /*muted text */
     --text-neutral-placeholder: theme('colors.stone.500'); /*placeholder text for forms, inputs and other uses*/
 
-    --text-primary-rest: theme('colors.cyan.700'); /*component fill for the rest state mostly buttons*/
-    --text-primary-hover: theme('colors.cyan.600'); /*component fill for the hover state mostly buttons*/
-    --text-primary-focus: theme('colors.cyan.800'); /*component fill for the focus state mostly buttons*/
+    --text-primary-rest: theme('colors.sky.700'); /*component fill for the rest state mostly buttons*/
+    --text-primary-hover: theme('colors.sky.600'); /*component fill for the hover state mostly buttons*/
+    --text-primary-focus: theme('colors.sky.800'); /*component fill for the focus state mostly buttons*/
 
     --text-secondary-rest: theme('colors.purple.700'); /*component fill for the rest state mostly buttons*/
     --text-secondary-hover: theme('colors.purple.600'); /*component fill for the hover state mostly buttons*/
@@ -101,9 +102,9 @@
     --border-neutral-subtle: theme('colors.stone.200'); /*subtle border*/
     --border-neutral-strong: theme('colors.stone.800'); /*strong border */
 
-    --border-primary-regular: theme('colors.cyan.400'); /*regular border*/
-    --border-primary-subtle: theme('colors.cyan.200'); /*subtle border*/
-    --border-primary-strong: theme('colors.cyan.800'); /*strong border */
+    --border-primary-regular: theme('colors.sky.400'); /*regular border*/
+    --border-primary-subtle: theme('colors.sky.200'); /*subtle border*/
+    --border-primary-strong: theme('colors.sky.800'); /*strong border */
 
     --border-secondary-regular: theme('colors.purple.400'); /*regular border*/
     --border-secondary-subtle: theme('colors.purple.200'); /*subtle border*/
@@ -142,11 +143,11 @@
     --neutral-hover: theme('colors.stone.600'); /*component fill for the hover state mostly buttons*/
     --neutral-focus: theme('colors.stone.800'); /*component fill for the focus state mostly buttons*/
 
-    --primary-rest: theme('colors.cyan.700'); /*component fill for the rest state mostly buttons*/
-    --primary-hover: theme('colors.cyan.600'); /*component fill for the hover state mostly buttons*/
-    --primary-focus: theme('colors.cyan.800'); /*component fill for the focus state mostly buttons*/
-    --primary-bg: theme('colors.cyan.950'); /*brand primary background*/
-    --primary-light: theme('colors.cyan.900'); /*subtle shade of brand primary*/
+    --primary-rest: theme('colors.sky.700'); /*component fill for the rest state mostly buttons*/
+    --primary-hover: theme('colors.sky.600'); /*component fill for the hover state mostly buttons*/
+    --primary-focus: theme('colors.sky.800'); /*component fill for the focus state mostly buttons*/
+    --primary-bg: theme('colors.sky.950'); /*brand primary background*/
+    --primary-light: theme('colors.sky.900'); /*subtle shade of brand primary*/
 
     --secondary-rest: theme('colors.purple.700'); /*component fill for the rest state mostly buttons*/
     --secondary-hover: theme('colors.purple.600'); /*component fill for the hover state mostly buttons*/
@@ -193,9 +194,9 @@
     --text-neutral-mute: theme('colors.stone.500'); /*muted text */
     --text-neutral-placeholder: theme('colors.stone.400'); /*placeholder text for forms, inputs and other uses*/
 
-    --text-primary-rest: theme('colors.cyan.300'); /*component fill for the rest state mostly buttons*/
-    --text-primary-hover: theme('colors.cyan.200'); /*component fill for the hover state mostly buttons*/
-    --text-primary-focus: theme('colors.cyan.100'); /*component fill for the focus state mostly buttons*/
+    --text-primary-rest: theme('colors.sky.300'); /*component fill for the rest state mostly buttons*/
+    --text-primary-hover: theme('colors.sky.200'); /*component fill for the hover state mostly buttons*/
+    --text-primary-focus: theme('colors.sky.100'); /*component fill for the focus state mostly buttons*/
 
     --text-secondary-rest: theme('colors.purple.300'); /*component fill for the rest state mostly buttons*/
     --text-secondary-hover: theme('colors.purple.200'); /*component fill for the hover state mostly buttons*/
@@ -226,9 +227,9 @@
     --border-neutral-subtle: theme('colors.stone.800'); /*subtle border*/
     --border-neutral-strong: theme('colors.stone.200'); /*strong border */
 
-    --border-primary-regular: theme('colors.cyan.600'); /*regular border*/
-    --border-primary-subtle: theme('colors.cyan.800'); /*subtle border*/
-    --border-primary-strong: theme('colors.cyan.200'); /*strong border */
+    --border-primary-regular: theme('colors.sky.600'); /*regular border*/
+    --border-primary-subtle: theme('colors.sky.800'); /*subtle border*/
+    --border-primary-strong: theme('colors.sky.200'); /*strong border */
 
     --border-secondary-regular: theme('colors.purple.600'); /*regular border*/
     --border-secondary-subtle: theme('colors.purple.800'); /*subtle border*/
